@@ -1,12 +1,9 @@
-#!/usr/bin/env python2.7
+__version__ = "0.1.0"
 
 from kivy.app import App
 from kivy.clock import Clock
 from kivy.core.window import Window
 from kivy.uix.widget import Widget
-__version__ = "0.1.0"
-
-
 from kivy.resources import resource_find
 from kivy.graphics.transformation import Matrix
 from kivy.graphics.opengl import *
@@ -113,7 +110,6 @@ class Renderer(Widget):
 class RendererApp(App):
     def build(self):
         return InterfaceManager(orientation='vertical')
-        
         
 if __name__ == "__main__":
     RendererApp().run()
