@@ -1,0 +1,33 @@
+<WelcomeScreen>:
+	BoxLayout:
+		orientation: 'vertical'
+		Label:
+			text: 'Welcome'
+		Button:
+			text: 'Load model'
+			on_press: root.show_load()
+		Button:
+			text: 'Exit'
+			on_press: exit()
+		
+<LoadDialog>:
+	BoxLayout:
+		orientation: 'vertical'
+		padding: 2*[30,40]
+		FileChooserListView:
+			id: load_filechooser
+			multiselect: False
+			path: root.get_home()
+		BoxLayout:
+			orientation: 'horizontal'
+			spacing: 15
+			padding: 2*[30,40]
+			Button:
+				id: load_button
+				text: 'Load'
+				on_press: root.load()
+			Button:
+				id: cancel_button
+				text: 'Cancel'
+				on_press: root.cancel()
+
