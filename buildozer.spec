@@ -25,7 +25,7 @@ source.exclude_exts = spec,obj
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version.regex = __version__ = ['"](.*)'['"]
+version.regex = __version__ = 0.1.0
 version.filename = %(source.dir)s/main.py
 
 # (str) Application versioning (method 2)
