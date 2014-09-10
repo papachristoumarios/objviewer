@@ -1,5 +1,4 @@
 __version__ = "0.1.0"
-
 from kivy.app import App
 from kivy.clock import Clock
 from kivy.core.window import Window
