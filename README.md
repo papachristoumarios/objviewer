@@ -3,4 +3,4 @@ rhoscanner-objviewer
 
 Wavefront OBJ file viewer for Android
 
-*Not yet implemented*
+Now avalable at Play Store (beta)
